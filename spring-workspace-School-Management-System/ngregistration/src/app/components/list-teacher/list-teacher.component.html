@@ -1,0 +1,56 @@
+<section class="vh-100 bg-image"
+style="background-image: url(assets/TableBG.jpg);background-repeat:no-repeat;background-attachment: fixed;background-size: cover;">
+
+    <form (ngSubmit)="loginUser()"> 
+        <style>
+            .w3-button {width:150px;height: 40px;}
+                       
+            </style>     
+
+        <!--<button type="submit" class="btn btn-primary">Back to Home</button>-->
+        <p><button class="w3-button  w3-round-large">Back to Home</button></p>
+        
+         
+  </form>
+  
+<h2> Teachers List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> First Name </th>
+            <th> Last Name </th>
+            <th> Email </th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let teacher of teacher">
+            <td> {{teacher.firstName}} </td>
+            <td> {{teacher.lastName}} </td>
+            <td> {{teacher.email}} </td>
+            <td>
+                <button 
+                (click) = "updateTeacher(teacher.id)"
+                class="btn btn-info"> Update
+                </button>
+                &nbsp;
+                <button 
+                (click) = "viewTeacher(teacher.id)"
+                class="btn btn-info"> View
+                </button>
+                &nbsp;
+                
+                &nbsp;
+                <button 
+                (click) = "deleteTeacher(teacher.id)"
+                class="btn btn-danger"> Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<button 
+                (click) = "createTeacher()"
+                class="btn btn-info"> Add
+                </button>

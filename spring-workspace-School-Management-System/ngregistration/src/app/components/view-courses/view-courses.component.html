@@ -1,0 +1,24 @@
+<section class="vh-100 bg-image"
+  style="background-image: url(assets/ViewBG.jpg);background-repeat:no-repeat;background-attachment: fixed;background-size: cover;">
+<form (ngSubmit)="getAllCourses()">  
+    <style>
+        .w3-button {width:150px;height: 40px;}
+                   
+        </style>       
+    <!--<button  class="w3-button w3-border w3-hover-teal">Back</button>-->
+    <p><button class="w3-button w3-black w3-round-xlarge">Back</button></p>        
+  </form>
+<div class="col-md-6 offset-md-3">
+    <h2 > Courses </h2>
+    <div>
+        <div class="info">
+            <label><b> Id: </b></label> {{courses.id}}
+        </div>
+        <div>
+            <label><b>  Name: </b></label> {{courses.name}}
+        </div>
+        <div>
+            <label><b> Fees: </b></label> {{courses.fees}}
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,37 @@
+
+  <div class="vh-100 bg-image"
+style="background-image: url(assets/cms3.jpg);background-repeat:no-repeat;background-attachment: fixed;background-size: cover;">
+
+
+
+        <h1  >Welcome to College Management System </h1>
+
+             <form (ngSubmit)="getAllStudents()">  
+  
+                   <button type="submit" class="btn btn-primary">Student List</button>        
+            </form>
+  <br><br>
+             <form (ngSubmit)="getAllTeachers()">         
+                  <button type="submit" class="btn btn-primary">Teacher List</button>        
+            </form>
+  <br><br>
+             <form (ngSubmit)="getAllCourses()">         
+                  <button type="submit" class="btn btn-primary">Course List</button>        
+             </form>
+  <br><br>
+             <form (ngSubmit)="registerUser()">         
+      
+
+
+          <div class="row mb-4" >
+             <div class="col d-flex justify-content-center">
+      <button type="submit" (click)="logout()" class="btn btn-primary" >Log out</button> 
+             </div>
+          </div>
+             
+    </form>
+    <br><br>
+  </div>
+
+
+

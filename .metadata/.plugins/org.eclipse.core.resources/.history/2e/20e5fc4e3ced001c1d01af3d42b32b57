@@ -1,0 +1,10 @@
+package com.hcl.registration.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.hcl.registration.model.Entity1;
+
+public interface RegistrationRepository extends JpaRepository<Entity1, Integer> {
+public Entity1 findByEmailId(String emailId);
+public Entity1 findByEmailIdAndPassword(String emailId, String password);
+}

@@ -1,0 +1,24 @@
+<section class="vh-100 bg-image"
+  style="background-image: url(assets/ViewBG.jpg);background-repeat:no-repeat;background-attachment: fixed;background-size: cover;">
+<form (ngSubmit)="getAllStudents()">  
+    <style>
+        .w3-button {width:150px;height: 40px;}
+                   
+        </style>       
+    <!--<button  class="w3-button w3-border w3-hover-teal">Back</button>-->
+    <p><button class="w3-button w3-black">Back</button></p>        
+  </form>
+<div class="col-md-6 offset-md-3">
+    <h2 > View Student </h2>
+    <div>
+        <div class="info">
+            <label><b> First Name: </b></label> {{student.firstName}}
+        </div>
+        <div>
+            <label><b> Last Name: </b></label> {{student.lastName}}
+        </div>
+        <div>
+            <label><b> Grade: </b></label> {{student.grade}}
+        </div>
+    </div>
+    </div>
